@@ -16,6 +16,13 @@ module "snet" {
   vnet_name  = module.vnet.vnet_name
 }
 
+module "pubip" {
+  depends_on  = [module.rg]
+  source      = "./modules/azurerm/public_ip"
+  rg_name     = module.rg.rg_name
+  rg_location = module.rg.rg_location
+}
+
 module "ni" {
   depends_on  = [module.rg, module.snet, module.pubip]
   source      = "./modules/azurerm/network_interface"
