@@ -2,7 +2,9 @@
 
 ## Descripción
 
+<p>
 Este repositorio contiene la configuración de Terraform para desplegar y gestionar la infraestructura de forma automatizada en la nube. Terraform es una herramienta de código abierto de HashiCorp que permite definir y provisionar infraestructura como código.
+</p>
 
 ## Requisitos Previos
 
